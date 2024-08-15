@@ -6,8 +6,6 @@ namespace FinanceTracker.Data
 {
     public class FinanceDbContext : DbContext {
         protected readonly IConfiguration Configuration;
-
-        private string connection_string = "Host=localhost;Database=finance_tracker;Username=admin;Password=admin";
         public FinanceDbContext(IConfiguration configuration)
         {
             Configuration = configuration;
